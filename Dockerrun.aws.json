@@ -1,0 +1,21 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "discord-bot",
+      "image": "data-transportation-bot",
+      "memory": 512,
+      "essential": true,
+      "environment": [
+        {
+          "name": "BOT_TOKEN",
+          "value": "${BOT_TOKEN}"
+        },
+        {
+          "name": "N8N_URL",
+          "value": "${N8N_URL}"
+        }
+      ]
+    }
+  ]
+}
